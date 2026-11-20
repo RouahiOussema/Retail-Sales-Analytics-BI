@@ -1,0 +1,106 @@
+# ==============================================================================
+# .gitignore - Retail Sales Analytics & BI
+# Sécurisation des données, environnements virtuels et configurations sensibles
+# ==============================================================================
+
+# --- Environnements Virtuels Python ---
+.venv/
+venv/
+env/
+ENV/
+.env/
+env.bak/
+venv.bak/
+
+# --- Caches & Bytecode Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Jupyter Notebooks & Checkpoints ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.jupyter/
+
+# --- Tests & Couverture de code ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# --- Fichiers Secrets, Identifiants & Variables d'Environnement ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.pfx
+*.crt
+credentials.json
+secrets.json
+client_secret*.json
+
+# --- Données Volumineuses & Bases de Données (Sécurité & Performance Git) ---
+# GitHub limite les fichiers à 100 Mo et déconseille le versionnage des gros jeux de données.
+# Exclure les fichiers de données brutes, nettoyées et bases SQLite/DuckDB :
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pickle
+*.pkl
+*.db
+*.sqlite
+*.sqlite3
+*.zip
+*.tar.gz
+*.7z
+
+# Préserver l'arborescence des dossiers de données sans pousser les fichiers de données volumineux
+!data/
+!data/raw/
+!data/clean/
+!data/marts/
+!data/raw/.gitkeep
+!data/clean/.gitkeep
+!data/marts/.gitkeep
+
+# --- IDEs, Éditeurs de texte & OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.directory
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
