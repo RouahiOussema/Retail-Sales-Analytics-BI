@@ -1,4 +1,4 @@
-# 🛒 Retail Sales Analytics & Business Intelligence (BI)
+#  Retail Sales Analytics & Business Intelligence (BI)
 
 [![Python Version](https://img.shields.io/badge/python-3.13%2B-blue.svg)](https://www.python.org/)
 [![Package Manager](https://img.shields.io/badge/package%20manager-uv-blueviolet.svg)](https://docs.astral.sh/uv/)
@@ -11,7 +11,7 @@ Ce projet couvre l'ensemble du cycle de vie de la donnée : depuis l'ingestion b
 
 ---
 
-## 📋 Table des Matières
+##  Table des Matières
 
 - [Aperçu du Projet](#-aperçu-du-projet)
 - [Architecture du Dépôt](#-architecture-du-dépôt)
@@ -25,7 +25,7 @@ Ce projet couvre l'ensemble du cycle de vie de la donnée : depuis l'ingestion b
 
 ---
 
-## 🎯 Aperçu du Projet
+##  Aperçu du Projet
 
 L'objectif de ce projet est d'extraire de la valeur décisionnelle à partir de plus de **540 000 transactions e-commerce** réparties dans 38 pays. 
 
@@ -36,7 +36,7 @@ Les principaux défis relevés sont :
 
 ---
 
-## 📂 Architecture du Dépôt
+##  Architecture du Dépôt
 
 ```plaintext
 Retail-Sales-Analytics-BI/
@@ -63,7 +63,7 @@ Retail-Sales-Analytics-BI/
 
 ---
 
-## 📊 Description du Dataset
+##  Description du Dataset
 
 Le projet exploite le célèbre jeu de données **Online Retail** (transactions enregistrées entre le 01/12/2010 et le 09/12/2011) :
 
@@ -109,21 +109,21 @@ $$\text{Parquet} \longrightarrow \text{CSV} \longrightarrow \text{Excel}$$
 
 ---
 
-## 🔒 Sécurité & Bonnes Pratiques (.gitignore)
+##  Sécurité & Bonnes Pratiques (.gitignore)
 
 Un fichier `.gitignore` robuste et exhaustif a été mis en place pour garantir la sécurité et la légèreté du dépôt :
 
-- 🚫 **Fichiers de données volumineux exclus** (`*.xlsx`, `*.csv`, `*.parquet`, `*.db`) :
+-  **Fichiers de données volumineux exclus** (`*.xlsx`, `*.csv`, `*.parquet`, `*.db`) :
   - Respect des limites GitHub (seuil d'avertissement à 50 Mo, blocage à 100 Mo).
   - Prévention de la fuite de données confidentielles ou nominatives (RGPD / GDPR).
   - Préservation de l'architecture des dossiers grâce aux balises `.gitkeep` (`data/raw/`, `data/clean/`, `data/marts/`).
-- 🚫 **Environnements virtuels exclus** (`.venv/`, `venv/`) pour éviter d'embarquer des dépendances locales lourdes.
-- 🚫 **Secrets et clés d'API protégés** (`.env`, `*.key`, `*.pem`, `credentials.json`).
-- 🚫 **Caches et résidus de développement exclus** (`__pycache__/`, `.ipynb_checkpoints/`, `.pytest_cache/`).
+-  **Environnements virtuels exclus** (`.venv/`, `venv/`) pour éviter d'embarquer des dépendances locales lourdes.
+-  **Secrets et clés d'API protégés** (`.env`, `*.key`, `*.pem`, `credentials.json`).
+-  **Caches et résidus de développement exclus** (`__pycache__/`, `.ipynb_checkpoints/`, `.pytest_cache/`).
 
 ---
 
-## 🛠️ Technologies Utilisées
+##  Technologies Utilisées
 
 - **Langage** : Python 3.13+
 - **Gestionnaire d'environnement & paquets** : [uv](https://github.com/astral-sh/uv)
@@ -134,7 +134,7 @@ Un fichier `.gitignore` robuste et exhaustif a été mis en place pour garantir 
 
 ---
 
-## 🚀 Installation & Démarrage Rapide
+##  Installation & Démarrage Rapide
 
 ### 1. Cloner le dépôt
 ```bash
@@ -184,8 +184,8 @@ jupyter lab NoteBooks/01_exploration.ipynb
 
 ---
 
-## 👤 Auteur
+##  Auteur
 
-**Oussema Rouahi**
+**Rouahi Oussama**
 - GitHub : [@RouahiOussema](https://github.com/RouahiOussema)
 - Email : [rouahi.oussama.tn@gmail.com](mailto:rouahi.oussama.tn@gmail.com)
